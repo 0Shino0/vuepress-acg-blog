@@ -255,6 +255,11 @@ excerpt: <p>摘要内容</p>
 3. 互动：点击 Rive 吉祥物切换表情，点赞触发爱心爆炸
 4. 图片：优雅的 hover 效果
 
+## 图片展示
+
+![首页1](https://shinoimg.yyshino.top/img/20260414203326.png)
+![首页2](https://shinoimg.yyshino.top/img/20260414203326.png)
+
 ## 📄 许可证
 
 MIT Licensed | Copyright © 2024-2026 ACG Dream
