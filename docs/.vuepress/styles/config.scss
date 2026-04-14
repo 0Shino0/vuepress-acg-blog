@@ -1,0 +1,201 @@
+/**
+ * 萌系动漫博客 - CSS变量配置
+ * 
+ * 核心设计系统：Pastel Dream 粉色梦幻主题
+ * 包含色彩、圆角、阴影、动效曲线等全局变量定义
+ * 
+ * @author: yy
+ * @date: 2026-04-11
+ */
+
+// ============================================
+// 色彩系统 (Color System)
+// ============================================
+
+:root {
+  // 主色调 - 樱花粉系列
+  --moe-primary: #FFB6C1;
+  --moe-primary-light: #FFD1DC;
+  --moe-primary-dark: #FF69B4;
+  --moe-primary-soft: #FFE4E9;
+  
+  // 辅助色 - 薰衣草紫系列
+  --moe-secondary: #E6E6FA;
+  --moe-secondary-light: #F0E6FF;
+  --moe-secondary-dark: #DDA0DD;
+  --moe-secondary-soft: #F5F0FF;
+  
+  // 强调色 - 阳光金与薄荷绿
+  --moe-accent: #FFD700;
+  --moe-accent-soft: #FFF8DC;
+  --moe-mint: #98FB98;
+  --moe-mint-soft: #F0FFF0;
+  
+  // 背景色
+  --moe-bg-primary: #FFF5F7;
+  --moe-bg-secondary: #FFFAFC;
+  --moe-bg-tertiary: #FFFFFF;
+  
+  // 文字色
+  --moe-text-primary: #5D4E6D;
+  --moe-text-secondary: #8B7AA0;
+  --moe-text-muted: #B8A9C9;
+  --moe-text-light: #FFFFFF;
+  
+  // 功能色
+  --moe-success: #90EE90;
+  --moe-warning: #FFD93D;
+  --moe-error: #FF6B6B;
+  --moe-info: #87CEEB;
+
+  // ============================================
+  // 圆角系统 (Border Radius)
+  // ============================================
+  
+  --moe-radius-sm: 12px;
+  --moe-radius-md: 20px;
+  --moe-radius-lg: 32px;
+  --moe-radius-xl: 48px;
+  --moe-radius-full: 50%;
+  
+  // ============================================
+  // 阴影系统 (Shadow System)
+  // ============================================
+  
+  // 柔和阴影 - 萌系风格
+  --moe-shadow-sm: 0 2px 8px rgba(255, 182, 193, 0.15);
+  --moe-shadow-md: 0 4px 16px rgba(255, 182, 193, 0.2);
+  --moe-shadow-lg: 0 8px 32px rgba(255, 182, 193, 0.25);
+  --moe-shadow-xl: 0 16px 48px rgba(255, 182, 193, 0.3);
+  
+  // 悬浮阴影 - hover状态
+  --moe-shadow-hover: 0 12px 40px rgba(255, 105, 180, 0.35);
+  
+  // 内阴影
+  --moe-shadow-inset: inset 0 2px 8px rgba(255, 182, 193, 0.1);
+  
+  // ============================================
+  // 动效曲线 (Easing Functions)
+  // ============================================
+  
+  // 弹性曲线 - 可爱弹跳效果
+  --moe-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  // 平滑曲线 - 标准过渡
+  --moe-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  // 叙事曲线 - 优雅入场
+  --moe-ease-dramatic: cubic-bezier(0.16, 1, 0.3, 1);
+  
+  // 弹性退出
+  --moe-ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  // 柔和曲线
+  --moe-ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  // ============================================
+  // 动画时长 (Animation Durations)
+  // ============================================
+  
+  --moe-duration-fast: 150ms;
+  --moe-duration-normal: 300ms;
+  --moe-duration-slow: 500ms;
+  --moe-duration-dramatic: 800ms;
+  
+  // ============================================
+  // 间距系统 (Spacing System)
+  // ============================================
+  
+  --moe-space-xs: 4px;
+  --moe-space-sm: 8px;
+  --moe-space-md: 16px;
+  --moe-space-lg: 24px;
+  --moe-space-xl: 32px;
+  --moe-space-2xl: 48px;
+  --moe-space-3xl: 64px;
+  
+  // ============================================
+  // 字体系统 (Typography)
+  // ============================================
+  
+  --moe-font-primary: 'Nunito', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --moe-font-display: 'Fredoka One', 'Nunito', sans-serif;
+  --moe-font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+  
+  // 字体大小
+  --moe-text-xs: 12px;
+  --moe-text-sm: 14px;
+  --moe-text-base: 16px;
+  --moe-text-lg: 18px;
+  --moe-text-xl: 24px;
+  --moe-text-2xl: 32px;
+  --moe-text-3xl: 48px;
+  --moe-text-4xl: 64px;
+
+  // ============================================
+  // 渐变定义 (Gradients)
+  // ============================================
+  
+  --moe-gradient-primary: linear-gradient(135deg, #FFB6C1 0%, #FFC0CB 50%, #FFD1DC 100%);
+  --moe-gradient-secondary: linear-gradient(135deg, #E6E6FA 0%, #F0E6FF 50%, #FFF0F5 100%);
+  --moe-gradient-sunset: linear-gradient(135deg, #FFB6C1 0%, #FFA07A 50%, #FFD700 100%);
+  --moe-gradient-dream: linear-gradient(135deg, #E6E6FA 0%, #FFB6C1 50%, #FFD1DC 100%);
+  --moe-gradient-candy: linear-gradient(135deg, #FFD1DC 0%, #FFB6C1 50%, #FFA07A 100%);
+}
+
+// ============================================
+// 暗色模式覆盖 (Dark Mode Overrides)
+// ============================================
+
+[data-theme='dark'] {
+  --moe-bg-primary: #2D2A3E;
+  --moe-bg-secondary: #3A3650;
+  --moe-bg-tertiary: #45405C;
+  
+  --moe-text-primary: #FFE4E9;
+  --moe-text-secondary: #D8BFD8;
+  --moe-text-muted: #9B8AA5;
+  
+  --moe-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --moe-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --moe-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+// ============================================
+// SCSS 变量导出 (for SCSS usage)
+// ============================================
+
+$colors: (
+  primary: #FFB6C1,
+  primary-light: #FFD1DC,
+  primary-dark: #FF69B4,
+  secondary: #E6E6FA,
+  accent: #FFD700,
+  mint: #98FB98,
+  text: #5D4E6D,
+  text-muted: #B8A9C9,
+  bg: #FFF5F7,
+);
+
+$radius: (
+  sm: 12px,
+  md: 20px,
+  lg: 32px,
+  xl: 48px,
+  full: 50%,
+);
+
+$easings: (
+  bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55),
+  smooth: cubic-bezier(0.4, 0, 0.2, 1),
+  dramatic: cubic-bezier(0.16, 1, 0.3, 1),
+  elastic: cubic-bezier(0.34, 1.56, 0.64, 1),
+);
+
+$shadows: (
+  sm: 0 2px 8px rgba(255, 182, 193, 0.15),
+  md: 0 4px 16px rgba(255, 182, 193, 0.2),
+  lg: 0 8px 32px rgba(255, 182, 193, 0.25),
+  xl: 0 16px 48px rgba(255, 182, 193, 0.3),
+  hover: 0 12px 40px rgba(255, 105, 180, 0.35),
+);

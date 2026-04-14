@@ -1,0 +1,106 @@
+{
+  "hash": "e4c6d87b",
+  "configHash": "367ddbd0",
+  "lockfileHash": "1f0f3988",
+  "browserHash": "85578d35",
+  "optimized": {
+    "gsap": {
+      "src": "../../../../node_modules/.pnpm/gsap@3.14.2/node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "cc0592af",
+      "needsInterop": false
+    },
+    "@vueuse/motion": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+motion@3.0.3_vue@3.5.32/node_modules/@vueuse/motion/dist/index.mjs",
+      "file": "@vueuse_motion.js",
+      "fileHash": "901463f5",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../../node_modules/.pnpm/three@0.183.2/node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "5cacccf2",
+      "needsInterop": false
+    },
+    "@rive-app/canvas": {
+      "src": "../../../../node_modules/.pnpm/@rive-app+canvas@2.37.1/node_modules/@rive-app/canvas/rive.js",
+      "file": "@rive-app_canvas.js",
+      "fileHash": "8df580da",
+      "needsInterop": true
+    },
+    "lottie-web": {
+      "src": "../../../../node_modules/.pnpm/lottie-web@5.13.0/node_modules/lottie-web/build/player/lottie.js",
+      "file": "lottie-web.js",
+      "fileHash": "a3b65be0",
+      "needsInterop": true
+    },
+    "@splinetool/runtime": {
+      "src": "../../../../node_modules/.pnpm/@splinetool+runtime@1.12.81/node_modules/@splinetool/runtime/build/runtime.js",
+      "file": "@splinetool_runtime.js",
+      "fileHash": "3ded6f14",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.7.9/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "@vue_devtools-api.js",
+      "fileHash": "8e427b38",
+      "needsInterop": false
+    },
+    "@vuepress/shared": {
+      "src": "../../../../node_modules/.pnpm/@vuepress+shared@2.0.0-rc.20/node_modules/@vuepress/shared/dist/index.js",
+      "file": "@vuepress_shared.js",
+      "fileHash": "1ee91db5",
+      "needsInterop": false
+    },
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.5.32/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "89d1cc52",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/.pnpm/vue-router@4.6.4_vue@3.5.32/node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "file": "vue-router.js",
+      "fileHash": "c4021069",
+      "needsInterop": false
+    },
+    "gsap/ScrollTrigger": {
+      "src": "../../../../node_modules/.pnpm/gsap@3.14.2/node_modules/gsap/ScrollTrigger.js",
+      "file": "gsap_ScrollTrigger.js",
+      "fileHash": "ef009f86",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "opentype-N5TGCVI7": {
+      "file": "opentype-N5TGCVI7.js"
+    },
+    "ui-UNW6IIJ2": {
+      "file": "ui-UNW6IIJ2.js"
+    },
+    "gaussian-splat-compression-KJ3ENFJP": {
+      "file": "gaussian-splat-compression-KJ3ENFJP.js"
+    },
+    "navmesh-KLYBQX4I": {
+      "file": "navmesh-KLYBQX4I.js"
+    },
+    "physics-YOEEJYUA": {
+      "file": "physics-YOEEJYUA.js"
+    },
+    "process-VRWBNS4X": {
+      "file": "process-VRWBNS4X.js"
+    },
+    "boolean-GQBMOBUG": {
+      "file": "boolean-GQBMOBUG.js"
+    },
+    "howler-4JVJXRJ4": {
+      "file": "howler-4JVJXRJ4.js"
+    },
+    "chunk-2NCXJYS6": {
+      "file": "chunk-2NCXJYS6.js"
+    },
+    "chunk-KVCYZR2Q": {
+      "file": "chunk-KVCYZR2Q.js"
+    }
+  }
+}

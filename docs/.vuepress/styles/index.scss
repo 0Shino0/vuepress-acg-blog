@@ -1,0 +1,343 @@
+/**
+ * 萌系动漫博客 - 全局样式
+ * 
+ * 包含基础样式重置、工具类、动画关键帧定义
+ * 为整个网站提供萌系视觉一致性
+ * 
+ * @author: yy
+ * @date: 2026-04-11
+ */
+
+@use './config.scss' as config;
+
+// ============================================
+// 基础重置与字体导入
+// ============================================
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka+One&family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--moe-font-primary);
+  background-color: var(--moe-bg-primary);
+  color: var(--moe-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// ============================================
+// 选择器样式
+// ============================================
+
+::selection {
+  background-color: var(--moe-primary-soft);
+  color: var(--moe-primary-dark);
+}
+
+// ============================================
+// 滚动条样式
+// ============================================
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--moe-bg-secondary);
+  border-radius: var(--moe-radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--moe-primary-light);
+  border-radius: var(--moe-radius-full);
+  border: 2px solid var(--moe-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--moe-primary);
+}
+
+// ============================================
+// 工具类 (Utility Classes)
+// ============================================
+
+// 弹性布局
+.moe-flex {
+  display: flex;
+}
+
+.moe-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moe-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+// 容器
+.moe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--moe-space-lg);
+}
+
+// 卡片基础样式
+.moe-card {
+  background: var(--moe-bg-tertiary);
+  border-radius: var(--moe-radius-lg);
+  box-shadow: var(--moe-shadow-md);
+  padding: var(--moe-space-lg);
+  transition: all var(--moe-duration-normal) var(--moe-ease-smooth);
+  
+  &:hover {
+    box-shadow: var(--moe-shadow-hover);
+    transform: translateY(-4px);
+  }
+}
+
+// 文字工具类
+.moe-text-gradient {
+  background: var(--moe-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.moe-text-display {
+  font-family: var(--moe-font-display);
+  font-weight: 400;
+}
+
+// ============================================
+// 动画关键帧 (Keyframes)
+// ============================================
+
+// 弹跳入场动画
+@keyframes moe-bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-50px);
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+  }
+  70% {
+    transform: scale(0.95) translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+// 浮动动画
+@keyframes moe-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+// 脉冲光晕
+@keyframes moe-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 182, 193, 0.8);
+  }
+}
+
+// 闪烁动画
+@keyframes moe-twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+// 摇摆动画
+@keyframes moe-wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+// 渐入动画
+@keyframes moe-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 渐入上滑
+@keyframes moe-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 旋转
+@keyframes moe-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// 弹跳
+@keyframes moe-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+// 摇晃
+@keyframes moe-shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+// ============================================
+// 动画类
+// ============================================
+
+.moe-animate-bounce-in {
+  animation: moe-bounce-in var(--moe-duration-dramatic) var(--moe-ease-bounce);
+}
+
+.moe-animate-float {
+  animation: moe-float 3s ease-in-out infinite;
+}
+
+.moe-animate-pulse-glow {
+  animation: moe-pulse-glow 2s ease-in-out infinite;
+}
+
+.moe-animate-twinkle {
+  animation: moe-twinkle 1.5s ease-in-out infinite;
+}
+
+.moe-animate-wiggle {
+  animation: moe-wiggle 0.5s ease-in-out;
+}
+
+.moe-animate-fade-in {
+  animation: moe-fade-in var(--moe-duration-normal) var(--moe-ease-smooth);
+}
+
+.moe-animate-slide-up {
+  animation: moe-slide-up var(--moe-duration-slow) var(--moe-ease-dramatic);
+}
+
+.moe-animate-spin {
+  animation: moe-spin 2s linear infinite;
+}
+
+.moe-animate-bounce {
+  animation: moe-bounce 1s ease-in-out infinite;
+}
+
+.moe-animate-shake {
+  animation: moe-shake 0.5s ease-in-out;
+}
+
+// ============================================
+// VuePress 主题覆盖
+// ============================================
+
+// 导航栏样式覆盖
+.navbar {
+  background: rgba(255, 245, 247, 0.85) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 182, 193, 0.2) !important;
+  box-shadow: var(--moe-shadow-sm) !important;
+  
+  .site-name {
+    font-family: var(--moe-font-display);
+    color: var(--moe-primary-dark) !important;
+  }
+  
+  .nav-links a {
+    color: var(--moe-text-primary) !important;
+    border-radius: var(--moe-radius-md);
+    padding: 0.5rem 1rem !important;
+    transition: all var(--moe-duration-fast) var(--moe-ease-smooth);
+    
+    &:hover {
+      background: var(--moe-primary-soft) !important;
+      color: var(--moe-primary-dark) !important;
+    }
+  }
+}
+
+// 侧边栏样式
+.sidebar {
+  background: var(--moe-bg-secondary) !important;
+  border-right: 1px solid rgba(255, 182, 193, 0.15) !important;
+  
+  .sidebar-links a {
+    color: var(--moe-text-primary) !important;
+    border-radius: var(--moe-radius-md);
+    
+    &.active {
+      background: var(--moe-primary-soft) !important;
+      color: var(--moe-primary-dark) !important;
+      border-left-color: var(--moe-primary) !important;
+    }
+    
+    &:hover {
+      background: rgba(255, 182, 193, 0.1) !important;
+    }
+  }
+}
+
+// 内容区域
+.page {
+  background: var(--moe-bg-primary) !important;
+}
+
+// 代码块样式
+div[class*='language-'] {
+  border-radius: var(--moe-radius-lg) !important;
+  background: #2D2A3E !important;
+}
