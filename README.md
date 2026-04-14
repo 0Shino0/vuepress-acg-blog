@@ -258,7 +258,7 @@ excerpt: <p>摘要内容</p>
 ## 图片展示
 
 ![首页1](https://shinoimg.yyshino.top/img/20260414203326.png)
-![首页2](https://shinoimg.yyshino.top/img/20260414203326.png)
+![首页2](https://shinoimg.yyshino.top/img/20260414203335.png)
 
 ## 📄 许可证
 
